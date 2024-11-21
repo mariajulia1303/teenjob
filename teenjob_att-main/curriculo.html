@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem de Currículo</title>
+    <link rel="icon" href="./img/globe-solid.svg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(45deg, #024aac, #f98922);
+        }
+        .container {
+            width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container form {
+            margin-top: 20px;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .container input[type="text"], .container textarea {
+            width: 97%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container input[type="date"] {
+            width: 97%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container select {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container button[type="button"] {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container button[type="button"]:hover {
+            background-color: #3e8e41;
+        }
+
+        ul {
+            display:flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 16px;
+            background-color: #024aac;
+            border: none;
+            padding: 16px;
+            width: 100%;
+            border-radius: 10px;
+            color: black;
+            font-size: 16px;
+        }
+
+        a {
+        color: white;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li> 
+            <li>
+                <a href="vagas.html">Vagas de Emprego</a>
+            </li>
+            <li>
+                <a href="entrevistas.html">Entrevistas</a>
+            </li>
+            <li>
+                <a href="curriculo.html">Montagem de Currículo</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+            <li>
+                <a href="Telalogin.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Montagem de Currículo</h1>
+        <form id="form-curriculo">
+            <h2>Dados Pessoais</h2>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" placeholder="Digite seu nome">
+            <label for="sobrenome">Sobrenome:</label>
+            <input id="sobrenome" type="text" placeholder="Digite seu sobrenome">
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input id="data-nascimento" type="date" placeholder="Digite sua data de nascimento">
+            <label for="endereco">Endereço:</label>
+            <input id="endereco" type="text" placeholder="Digite seu endereço">
+            <label for="cidade">Cidade:</label>
+            <input id="cidade" type="text" placeholder="Digite sua cidade">
+            <label for="estado">Estado:</label>
+            <select id="estado">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <button type="button" id="salvar-dados">Salvar dados</button>
