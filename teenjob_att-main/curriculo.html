@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: linear-gradient(45deg, #024aac, #f98922);
+            background-image: linear-gradient(45deg, #f7dc6f, #ffd700);
         }
         .container {
             width: 800px;
@@ -77,16 +77,25 @@
             background-color: #024aac;
             border: none;
             padding: 16px;
-            width: 100%;
+            width: 97.5%;
             border-radius: 10px;
             color: black;
             font-size: 16px;
+        }
+
+        h1{
+            color: #f98922;;
         }
 
         a {
         color: white;
         text-decoration: none;
     }
+    nav a:hover {
+    color: blue;
+}
+
+
     </style>
 </head>
 <body>
@@ -115,13 +124,21 @@
     <div class="container">
         <h1>Montagem de Currículo</h1>
         <form id="form-curriculo">
-            <h2>Dados Pessoais</h2>
+            <h3>Insira seus dados pessoais</h3>
             <label for="nome">Nome:</label>
             <input id="nome" type="text" placeholder="Digite seu nome">
             <label for="sobrenome">Sobrenome:</label>
             <input id="sobrenome" type="text" placeholder="Digite seu sobrenome">
             <label for="data-nascimento">Data de Nascimento:</label>
             <input id="data-nascimento" type="date" placeholder="Digite sua data de nascimento">
+            <label for="habilidades">Quais são suas habilidades e/ou competências?:</label>
+            <input id="habilidades" type="text" placeholder="Digite aqui suas habilidades e/ou competências">
+            <label for="objetivo">Qual é o seu objetivo?:</label>
+            <input id="objetivo" type="text" placeholder="Digite aqui seu objetivo">
+            <label for="objetivo">Qual é a sua formação acadêmica e profissinal?:</label>
+            <input id="formação" type="text" placeholder="Digite aqui sua formação">
+            <label for="cursos">Possui cursos e/ou certificações complementares?:</label>
+            <input id="cursos" type="text" placeholder="Digite aqui seus cursos e/ou certificações">
             <label for="endereco">Endereço:</label>
             <input id="endereco" type="text" placeholder="Digite seu endereço">
             <label for="cidade">Cidade:</label>
@@ -151,3 +168,4 @@
                 <option value="RN">Rio Grande do Norte</option>
                 <option value="RS">Rio Grande do Sul</option>
                 <button type="button" id="salvar-dados">Salvar dados</button>
+                
